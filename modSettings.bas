@@ -1,0 +1,16 @@
+Attribute VB_Name = "modSettings"
+Public TIME_BETWEEN_WORDS As Long
+Public TIME_BETWEEN_LETTERS As Long
+Public TIME_UNTIL_INPUT As Long
+Public TIME_BETWEEN_WORD_AND_LETTERS As Long
+Public DATABASE_LOCATION As String
+Public DATABASE_MODPRO_LOCATION As String
+
+Public Function InitVars()
+    TIME_BETWEEN_WORDS = 5000
+    TIME_BETWEEN_LETTERS = 1000
+    TIME_UNTIL_INPUT = 1000
+    TIME_BETWEEN_WORD_AND_LETTERS = 2000
+    DATABASE_LOCATION = App.Path & "\words.txt"
+    DATABASE_MODPRO_LOCATION = App.Path & "\modpro.txt"
+End Function
